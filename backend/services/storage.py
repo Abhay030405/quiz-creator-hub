@@ -78,3 +78,13 @@ def quiz_path(quiz_id: str) -> Path:
 def attempts_path(quiz_id: str) -> Path:
     """Returns the Path to data/attempts/{quiz_id}.json"""
     return ATTEMPTS_DIR / f"{quiz_id}.json"
+
+
+def starred_path() -> Path:
+    """Returns the Path to data/starred.json"""
+    return STARRED_FILE
+
+
+def wrong_path() -> Path:
+    """Returns the Path to data/wrong.json"""
+    return WRONG_FILE
